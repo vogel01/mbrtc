@@ -75,10 +75,10 @@ def opdracht8():
     A, B, C, D = opdracht1()
     h = 0.42
     u_step = step_signal()
-    time = np.linspace(0, 5, 100)
+    time = h * np.arange(100)
     simresx, simresy = sim_intersample(A, B, C, D, h, 10, u_step, time)
     plt.plot(simresx, simresy)
     plt.show()
 
 if __name__ == "__main__":
-    opdracht8()
+    opdracht2()
